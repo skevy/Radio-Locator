@@ -1,0 +1,4 @@
+*.pyc
+.DS_Store
+radio-locator/db/*
+local_settings.py
