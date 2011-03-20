@@ -42,7 +42,7 @@ class Station(models.Model):
         
     def serialize(self):
         return {
-            'frequency': self.frequency,
+            'frequency': "%.1f" % self.frequency,
             'call_letters': self.call_letters,
             'city': self.city,
             'state': self.state,
