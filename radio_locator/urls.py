@@ -6,7 +6,7 @@ from django.http import HttpResponse
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^locator/', include('radio-locator.locator.urls')),
+    url(r'^locator/', include('radio_locator.locator.urls')),
 
     # ADMIN
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

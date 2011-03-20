@@ -1,5 +1,5 @@
 *.pyc
 .DS_Store
-radio-locator/db/*
+radio_locator/db/*
 local_settings.py
-/radio-locator/locator/fixtures/
+/radio_locator/locator/fixtures/

@@ -3,7 +3,7 @@ import json
 from django.http import HttpResponse, HttpResponseNotFound
 from django.contrib.gis.geos import Point
 
-from radio-locator.locator.models import Station
+from radio_locator.locator.models import Station
 
 def all_stations(request):
     if "lat" not in request.GET or "lng" not in request.GET:

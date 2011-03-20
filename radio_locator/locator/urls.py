@@ -4,6 +4,6 @@ from django.contrib import admin
 
 admin.autodiscover()
 
-urlpatterns = patterns('radio-locator.locator.views',
+urlpatterns = patterns('radio_locator.locator.views',
     url(r'^get_all_stations/$', "all_stations")
 )

@@ -67,7 +67,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'radio-locator.urls'
+ROOT_URLCONF = 'radio_locator.urls'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_DIR, 'templates/'),
@@ -84,8 +84,8 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'django.contrib.gis',
     
-    'radio-locator',
-    'radio-locator.locator',
+    'radio_locator',
+    'radio_locator.locator',
         
     'django_extensions',
     'south',
