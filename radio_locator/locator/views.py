@@ -14,6 +14,6 @@ def all_stations(request):
     stations = {}
         
     stations['high'] = [s.serialize() for s in Station.objects.filter(local_range__contains=loc).distance(loc).order_by('distance')]
-    # stations['medium'] = [s.serialize() for s in Station.objects.filter(distant_range__contains=loc).exclude(pk__in=[s['pk'] for s in stations['high']]).order_by('-frequency')]
+    stations['medium'] = [s.serialize() for s in Station.objects.filter(distant_range__contains=loc).exclude(pk__in=[s['pk'] for s in stations['high']]).distance(loc).order_by('-frequency')]
     
     return HttpResponse(json.dumps(stations), mimetype="application/json")
