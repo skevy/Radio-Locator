@@ -16,7 +16,7 @@ def all_stations(request):
     stations['medium'] = []
         
     high_stations = Station.objects.filter(local_range__contains=loc).distance(loc).order_by('distance')
-    medium_stations = Station.objects.filter(distant_range__contains=loc).exclude(pk__in=[s['pk'] for s in stations['high']]).distance(loc).order_by('-frequency')
+    medium_stations = Station.objects.filter(distant_range__contains=loc).exclude(pk__in=[s.pk for s in high_stations]).distance(loc).order_by('-frequency')
     
     for s in high_stations:
         station = s.serialize()
