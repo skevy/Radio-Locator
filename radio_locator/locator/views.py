@@ -21,13 +21,11 @@ def all_stations(request):
     for s in high_stations:
         station = s.serialize()
         station.update(distance=s.distance.m)
-        print s.distance.m
         stations['high'].append(station)
     
     for s in medium_stations:
         station = s.serialize()
         station.update(distance=s.distance.m)
-        print s.distance.m
         stations['medium'].append(station)
     
     return HttpResponse(json.dumps(stations), mimetype="application/json")
