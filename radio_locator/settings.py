@@ -16,9 +16,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',                 # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'radiolocator', # Or path to database file if using sqlite3.
-        'USER': 'gis',                                             # Not used with sqlite3.
-        'PASSWORD': 'Ada2kath',                                         # Not used with sqlite3.
+        'NAME': 'radio_locator', # Or path to database file if using sqlite3.
+        'USER': 'radio_locator',                                             # Not used with sqlite3.
+        'PASSWORD': 'asdf123',                                         # Not used with sqlite3.
         'HOST': '',                                             # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                                             # Set to empty string for default. Not used with sqlite3.
     }
